@@ -8,15 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="generatorContainer">
-        <h1>Random String Generator</h1>
-
-        <form>
-            <input type="text" id="length" placeholder="Enter the length of the string">
-            <button type="submit">Generate</button>
-        </form>
-        <p><span id="resultGenerate"></span> </p>
-        <!-- <button onclick="copyToClipboard()">Copy</button> -->
+    <div id="container">
+        <nav>
+            <div>
+                <a href="#">&#9432;</a> <!-- info icon unicode -->
+                <span class="info">Enter a positive integer in the input box, then click 'Generate'. <br> You may copy to your clipboard the random string using 'Copy' button.</span>
+            </div>
+        </nav>
+        <div id="generatorContainer">
+            <h1>Random String Generator</h1>
+    
+            <form>
+                <input type="text" id="length" placeholder="Enter the length of the string">
+                <button type="submit">Generate</button>
+            </form>
+            <p><span id="resultGenerate"></span> </p>
+            <button id="copyButton">Copy</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
